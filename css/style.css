@@ -1352,8 +1352,6 @@ li:last-child .p-service-list {
     margin-bottom: 0;    
 }
 
-
-
 .partners-list {
     list-style: none;
     font-size: 18px;
@@ -1456,8 +1454,6 @@ li:last-child .p-service-list {
     margin-bottom: 41px;
     width: 940px;
     padding: 0;
-
-
 }
 
 .footer-adress {
@@ -1818,7 +1814,7 @@ li:last-child .p-service-list {
     background-color: var(--grey-catalog);
     color: var(--basic-grey);
     grid-column: 1/-1;
-    padding: 29px 739px 29px 29px;
+    padding: 29px 729px 29px 29px;
 }
 
 .h-sort,
