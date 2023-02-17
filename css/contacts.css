@@ -1,0 +1,109 @@
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 460px 300px;
+  margin-bottom: 70px;
+  column-gap: 180px;
+  align-self: center;
+}
+
+.contacts__description h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  margin: 0;
+}
+
+.contacts__description p {
+  font-family: PT Sans, 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.contacts__list {
+  list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+  margin-top: 3px;
+}
+
+.contacts__list li {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.contacts__list li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
+  right: 435px;
+  top: 11px;
+}
+
+.contacts__link {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  text-align: center;
+  padding: 11px 40px 9px 40px;
+}
+
+.contacts__link:hover {
+  background-color: var(--red-buttonh);
+}
+
+.contacts__link:active {
+  background-color: var(--red-buttona);
+}
+
+.contacts__content h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  margin: 0;
+}
+
+.contacts__content p {
+  font-family: PT Sans, 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.contacts__btn {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  padding: 11px 61px 9px 62px;
+  border: none;
+  margin-top: 20px;
+  outline: none;
+  cursor: pointer;
+
+}
+
+.contacts__map {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+}

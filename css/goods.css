@@ -105,7 +105,7 @@
   bottom: 246px;
 }
 
-p {
+.goods__paragraph {
   font-family: PT Sans, 'Arial', sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -123,7 +123,7 @@ del {
   margin-bottom: 13px;
 }
 
-a {
+.goods__link {
   font-family: PT Sans, 'Arial', sans-serif;
   font-weight: bold;
   font-size: 17px;
