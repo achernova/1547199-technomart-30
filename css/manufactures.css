@@ -6,15 +6,6 @@
   margin-bottom: 25px;
 }
 
-h2 {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: normal;
-  color: var(--deeply-grey);
-  text-transform: uppercase;
-  padding-left: 28px;
-}
-
 .manufactures__link {
   text-align: center;
   font-size: 14px;

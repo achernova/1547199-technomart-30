@@ -1,0 +1,41 @@
+.heading {
+  margin-bottom: 20px;
+}
+
+.heading__wrapper {
+  background-color: var(--basic-pink);
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 14px 25px 29px;
+  align-items: center;
+}
+
+.heading h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  color: var(--deeply-grey);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.heading__btn {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--basic-red);
+  max-width: 192px;
+  padding: 11px 24px 9px 24px;
+}
+
+
+.heading__btn:hover{
+  background-color: var(--red-buttonh);
+}
+
+.heading__btn:active {
+  background-color: var(--red-buttona);
+}

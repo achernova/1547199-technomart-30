@@ -1,0 +1,38 @@
+.breadcrumbs {
+  font-family: PT Sans, 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  list-style: none;
+  color: var(--basic-black);
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin: 0;
+  grid-column: 1/-1;
+  position: relative;
+}
+
+.breadcrumbs a {
+  list-style: none;
+  color: var(--basic-black);
+  padding-right: 40px;
+}
+
+.arrow {
+  position: relative;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  background-image: url(../img/icon-right-small.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: -22px;
+  top: 1px;
+}

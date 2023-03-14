@@ -9,12 +9,12 @@
   margin: auto;
 }
 
-.footer__contacts {
+.footer__container {
   display: grid;
   grid-template-columns: 35% 65%;
-  margin-bottom: 41px;
-  width: 940px;
+  max-width: 940px;
   padding: 0;
+  margin: 0 auto 41px auto;
 }
 
 .footer__adress {
@@ -109,6 +109,8 @@
 .feedback__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  max-width: 940px;
+  margin: 0 auto;
 }
 
 .feedback__container p {

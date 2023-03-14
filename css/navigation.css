@@ -1,0 +1,26 @@
+.navigation__list {
+  background-color: var(--deeply-grey);
+  list-style: none;
+  box-shadow: 0 5px 0 0 var(--deep-grey);
+  padding: 16px 18px 16px 23px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 30px;
+}
+
+.navigation__link {
+  list-style: none;
+  color: var(--basic-white);
+  padding: 17px 29px 22px 29px;
+  text-align: center;
+}
+
+.navigation__link:hover {
+  background-color: var(--deep-grey);
+}
+
+.navigation__link:active {
+  background-color: var(--header-grey);
+  color: var(--basic-white);
+  opacity: 0.5;
+}

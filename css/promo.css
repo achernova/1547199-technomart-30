@@ -39,7 +39,7 @@
   background: var(--special-yellowlight) url(../img/slide1.jpg)no-repeat center top;
 }
 
-.promo__slide h3 {
+.promo__slide-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -178,7 +178,7 @@
   box-sizing: border-box;
 }
 
-.promo__container  h2 {
+.promo__container h3 {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -189,7 +189,7 @@
   margin: 0;
 }
 
-.promo__container  a {
+.promo__container a {
   font-size: 14px;
   line-height: 18px;
   font-style: normal;
