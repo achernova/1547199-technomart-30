@@ -78,7 +78,7 @@
   font-weight: 400;
   color: var(--basic-white);
   background-color: var(--basic-white);
-  background-image: url("../img/bg.jpg");
+  /*background-image: url("../img/bg.jpg");*/
   background-position: top center;
   background-repeat: no-repeat;
   display: grid;
@@ -120,6 +120,9 @@ a {
 
 
 
+.is-open {
+  display: block;
+}
 
 
 /*filter*/
@@ -387,7 +390,7 @@ a.disabled-li {
   box-shadow: 10px 10px 10px 10px var(--shadow);
 }
 
-.modal-show {
+.is-open {
   display: block;
 }
 
@@ -601,7 +604,7 @@ a.disabled-li {
   left: -1px;
 }
 
-.modal-close-map {
+.modal-map__close-map {
   position: absolute;
   width: 25px;
   height: 25px;
@@ -613,8 +616,8 @@ a.disabled-li {
   outline: none;
 }
 
-.modal-close-map::before,
-.modal-close-map::after {
+.modal-map__close-map::before,
+.modal-map__close-map::after {
   content: "";
   position: absolute;
   width: 25px;
@@ -624,21 +627,21 @@ a.disabled-li {
   right: 5px;
 }
 
-.modal-close-map::before {
+.modal-map__close-map::before {
   transform: rotate(45deg);
 }
 
-.modal-close-map::after {
+.modal-map__close-map::after {
   transform: rotate(-45deg);
 }
 
-.modal-close-map:hover::before,
-.modal-close-map:hover::after {
+.modal-map__close-map:hover::before,
+.modal-map__close-map:hover::after {
   background-color: var(--red-buttonh);
 }
 
-.modal-close-map:active::before,
-.modal-close-map:active::after {
+.modal-map__close-map:active::before,
+.modal-map__close-map:active::after {
   background-color: var(--red-buttona);
 }
 

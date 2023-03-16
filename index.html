@@ -81,65 +81,83 @@
 
   <main>
     <h1 class="visually-hidden">Техномарт</h1>
-    <div class="container">
-      <section class="promo">
+    <section class="promo">
+      <div class="container">
         <h2 class="visually-hidden">Промо-блок</h2>
         <div class="promo__wrapper">
 
-          <div class="promo__slider" data-slider="slider">
-            <div class="promo__slider-wrapper">
-              <div class="promo__slides">
-                <div class="promo__slide">
+          <div class="promo__slider">
+            <div class="promo__slides" data-element="slider">
+              <div class="promo__slide promo__slide--perf" data-element="slider-item">
+                <div class="promo__content">
                   <h3 class="promo__slide-title">Перфораторы</h3>
                   <p>Настоящие мужские игрушки</p>
-                  <a href="catalog.html">Открыть каталог</a>
+                  <a class="promo__btn" href="catalog.html">Открыть каталог</a>
                 </div>
-                <div class="promo__slide">
+              </div>
+              <div class="promo__slide promo__slide--drill" data-element="slider-item">
+                <div class="promo__content">
                   <h3 class="promo__slide-title">Дрели</h3>
                   <p>Соседям на радость!</p>
-                  <a href="catalog.html">Открыть каталог</a>
+                  <a class="promo__btn" href="catalog.html">Открыть каталог</a>
+                </div>
+              </div>
+              <div class="promo__slide promo__slide--perf" data-element="slider-item">
+                <div class="promo__content">
+                  <h3 class="promo__slide-title">Перфораторы</h3>
+                  <p>Настоящие мужские игрушки</p>
+                  <a class="promo__btn" href="catalog.html">Открыть каталог</a>
+                </div>
+              </div>
+              <div class="promo__slide promo__slide--drill" data-element="slider-item">
+                <div class="promo__content">
+                  <h3 class="promo__slide-title">Дрели</h3>
+                  <p>Соседям на радость!</p>
+                  <a class="promo__btn" href="catalog.html">Открыть каталог</a>
                 </div>
               </div>
             </div>
             <div class="slider-buttons">
-              <button type="button" class="promo__btn-left" aria-label="Налево"></button>
-              <button type="button" class="promo__btn-right" aria-label="Направо"></button>
-              <button type="button" class="promo__dot-left" aria-label="Слайд первый"></button>
-              <button type="button" class="promo__dot-right" aria-label="Слайд второй"></button>
+              <button type="button" class="promo__btn-left" aria-label="Налево" data-element="prev"></button>
+              <button type="button" class="promo__btn-right" aria-label="Направо" data-element="next"></button>
             </div>
           </div>
 
           <div class="promo__container promo__container--materials new">
             <h3 class="promo__container-title">Материалы</h3>
-            <a href="#">На любой вкус</a>
+            <a class="promo__link" href="#">На любой вкус</a>
           </div>
           <div class="promo__container promo__container--instrument">
             <h3 class="promo__container-title">Инструмент</h3>
-            <a href="#">На все случаи</a>
+            <a class="promo__link" href="#">На все случаи</a>
           </div>
           <div class="promo__container promo__container--technics">
             <h3 class="promo__container-title">Техника</h3>
-            <a href="#">Для стройки</a>
+            <a class="promo__link" href="#">Для стройки</a>
           </div>
           <div class="promo__container promo__container--discount">
             <h3 class="promo__container-title">Скидки 50&#37;</h3>
-            <a href="#">На 350 товаров</a>
+            <a class="promo__link" href="#">На 350 товаров</a>
           </div>
           <div class="promo__container promo__container--delivery">
             <h3 class="promo__container-title">Доставка</h3>
-            <a href="#">Бесплатно</a>
+            <a class="promo__link" href="#">Бесплатно</a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="heading">
+    <section class="heading">
+      <div class="container">
         <div class="heading__wrapper">
           <h2>Популярные товары:</h2>
           <a href="#" class="heading__btn">Все популярные товары</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="goods">
+    <section class="goods">
+      <div class="container">
         <ul class="goods__list">
           <li class="goods__item">
             <div class="goods__block">
@@ -206,16 +224,20 @@
             </div>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="heading">
+    <section class="heading">
+      <div class="container">
         <div class="heading__wrapper">
           <h2>Популярные производители:</h2>
           <a href="#" class="heading__btn">Все производители</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="manufactures">
+    <section class="manufactures">
+      <div class="container">
         <ul class="manufactures__list">
           <li class="manufactures__item">
             <a href="#">
@@ -258,9 +280,11 @@
             </a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="service">
+    <section class="service">
+      <div class="container">
         <div class="service__heading">
           <h2 class="service__title">Сервисы</h2>
           <p class="service__paragraph">Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех
@@ -268,17 +292,17 @@
         </div>
         <div class="service__content">
           <div class="service__tabs">
-            <button type="button" class="service__btn" disabled>Доставка</button>
-            <button type="button" class="service__btn">Гарантия</button>
-            <button type="button" class="service__btn">Кредит</button>
+            <button type="button" class="service__btn is-active is-disabled" data-element="service" data-id="service1">Доставка</button>
+            <button type="button" class="service__btn" data-element="service" data-id="service2">Гарантия</button>
+            <button type="button" class="service__btn" data-element="service" data-id="service3">Кредит</button>
           </div>
           <ul class="service__list">
-            <li class="service__item">
+            <li class="service__item is-open" data-element="service-item" id="service1">
               <h3>Доставка</h3>
               <p class="service__paragraph">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно
                 бесплатно!<br>Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
             </li>
-            <li class="service__item">
+            <li class="service__item" data-element="service-item" id="service2">
               <h3>Гарантия</h3>
               <p class="service__paragraph">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара,
                 спровоцированного его <br>возгоранием, вы всегда можете быть уверены в нашей <br>гарантии. Мы обменяем
@@ -286,7 +310,7 @@
                 сами.
               </p>
             </li>
-            <li class="service__item">
+            <li class="service__item" data-element="service-item" id="service3">
               <h3>Кредит</h3>
               <p class="service__paragraph">Залезть в долговую яму стало проще! <br>Кредитные консультанты придут вам на
                 помощь.</p>
@@ -294,9 +318,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="contacts">
+    <section class="contacts">
+      <div class="container">
         <div class="contacts__wrapper">
           <div class="contacts__description">
             <h2>Компания «Техномарт»</h2>
@@ -320,51 +346,51 @@
             <button type="button" class="contacts__btn">Заблудились? Напишите нам!</button>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="modal modal-window">
-        <h2 class="visually-hidden">Окно обратной связи</h2>
-        <form action="https://echo.htmlacademy.ru/" method="post" class="modal-write-us">
-          <div class="modal-filter">
-            <div class="modal-name">
-              <label for="name">Ваше имя:</label>
-              <input type="text" name="writeus" id="name" placeholder="Имя Фамилия">
-            </div>
-            <div class="modal-email">
-              <label for="mail">Ваш e-mail:</label>
-              <input type="email" name="mail" id="mail" placeholder="email@example.com">
-            </div>
-            <div class="modal-textarea">
-              <label for="letter-field">Текст письма:</label>
-              <textarea name="letter" id="letter-field" rows="10" class="placeholder">В свободной форме</textarea>
-            </div>
+    <section class="modal modal-window">
+      <h2 class="visually-hidden">Окно обратной связи</h2>
+      <form action="https://echo.htmlacademy.ru/" method="post" class="modal-write-us">
+        <div class="modal-filter">
+          <div class="modal-name">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="writeus" id="name" placeholder="Имя Фамилия">
           </div>
-          <div class="modal-footer">
-            <button type="submit" class="button-send">Отправить</button>
+          <div class="modal-email">
+            <label for="mail">Ваш e-mail:</label>
+            <input type="email" name="mail" id="mail" placeholder="email@example.com">
           </div>
-        </form>
-        <button type="button" class="modal-close" aria-label="Закрыть"></button>
-      </section>
-
-      <section class="modal modal-map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-          width="943" height="449" allowfullscreen
-          title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-        <button type="button" class="modal-close-map" aria-label="Закрыть"></button>
-      </section>
-
-      <section class="modal modal-basket">
-        <h2 class="visually-hidden">Корзина</h2>
-        <p>Товар добавлен в корзину!</p>
-        <div>
-          <a href="#" class="a-buy">Оформить заказ</a>
-          <a href="catalog.html" class="next-buy">Продолжить покупки</a>
+          <div class="modal-textarea">
+            <label for="letter-field">Текст письма:</label>
+            <textarea name="letter" id="letter-field" rows="10" class="placeholder">В свободной форме</textarea>
+          </div>
         </div>
-        <button type="button" class="modal-close-basket" aria-label="Закрыть"></button>
-      </section>
-    </div>
+        <div class="modal-footer">
+          <button type="submit" class="button-send">Отправить</button>
+        </div>
+      </form>
+      <button type="button" class="modal-close" aria-label="Закрыть"></button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        width="943" height="449" allowfullscreen
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      <button type="button" class="modal-map__close-map" aria-label="Закрыть"></button>
+    </section>
+
+    <section class="modal modal-basket">
+      <h2 class="visually-hidden">Корзина</h2>
+      <p>Товар добавлен в корзину!</p>
+      <div>
+        <a href="#" class="a-buy">Оформить заказ</a>
+        <a href="catalog.html" class="next-buy">Продолжить покупки</a>
+      </div>
+      <button type="button" class="modal-close-basket" aria-label="Закрыть"></button>
+    </section>
   </main>
 
   <footer class="footer">
@@ -461,12 +487,14 @@
         </div>
       </div>
     </div>
-
-
   </footer>
-  <script src="js/form.min.js"></script>
-  <script src="js/map.min.js"></script>
-  <script src="js/basket.min.js"></script>
+
+  <!-- <script src="js/form.js"></script> -->
+  <script src="js/map.js"></script>
+  <script src="js/basket.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/tabs.js"></script>
+
 </body>
 
 </html>

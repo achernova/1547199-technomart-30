@@ -35,16 +35,12 @@
 
 }
 
-.new-good {
-  position: relative;
-}
-
 .new-good::after {
   content: "";
   position: absolute;
   width: 70px;
   height: 70px;
-  background-image: url(../img/new.png);
+  background-image: url(../img/new.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   left: 149px;

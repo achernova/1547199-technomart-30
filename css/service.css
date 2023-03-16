@@ -29,7 +29,6 @@
   padding: 0;
   margin-top: 70px;
   box-sizing: border-box;
-
 }
 
 .service__tabs {
@@ -45,7 +44,7 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   left: 230px;
-  bottom: 50px;
+  bottom: 100px;
 }
 
 .service__btn{
@@ -60,12 +59,6 @@
   border: none;
   outline: none;
   cursor: pointer;
-}
-
-.service__btn:disabled {
-  cursor: default;
-  background-color: var(--basic-white);
-  color: var(--deeply-grey);
 }
 
 .service__btn:hover {
@@ -106,23 +99,19 @@ h3 {
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
-.serviche__list li {
+.service__item {
+  display: none;
   padding-bottom: 20px;
 }
 
-.service__list li:nth-child(2),
-.service__list li:last-child {
-  display: none;
-}
-
-.service__list li:first-child {
+.service__item:first-child {
   position: relative;
 }
 
-.service__list li:first-child::after {
+.service__item:first-child::after {
   content: "";
   position: absolute;
   width: 468px;
@@ -187,4 +176,14 @@ h3 {
 
 .service__link:active {
   background-color: var(--red-buttona);
+}
+
+.is-open {
+  display: block;
+}
+
+.is-disabled {
+  cursor: default;
+  background-color: var(--basic-white);
+  color: var(--deeply-grey);
 }
