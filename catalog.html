@@ -9,12 +9,13 @@
   <link rel="apple-touch-icon" href="img/152fav.png">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body class="page-body">
   <header class="header">
     <div class="container">
-      <nav class="header__navigation">
+      <div class="header__navigation">
         <div class="header__background-navigation">
           <div class="header__navigation-top">
             <a href="#" class="header__logo-main">
@@ -36,11 +37,13 @@
             <button type="header__button" class="button">Оформить заказ</button>
           </div>
         </div>
-        <div class="header__navigation-adress  ">
-          <h1 class="header__h-header">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-          <div class="header__adres-container">
+        <div class="header__navigation-adress ">
+          <div class="header__paragraph">
+            <p>Интернет-магазин строительных материалов и&nbsp;инструментов для&nbsp;ремонта</p>
+          </div>
+          <div class="header__adress-container">
             <a href="tel:+78125550555" class="header__phone">+7 (812) 555-05-55</a>
-            <p class="header__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="header__sign">
             <p>
@@ -67,30 +70,34 @@
             </div>
           </div>
         </div>
-        <ul class="header__list-header  ">
-          <li class="header__item">
-            <a class="header__link" href="index.html">Главная</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Компания</a>
-          </li class="header__item">
-          <li class="header__item">
-            <a class="header__link" href="">Каталог</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Новости</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Спецпредложения</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Доставка</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Компания</a>
+            </li class="navigation__item">
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Новости</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Спецпредложения</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Доставка</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
     </div>
   </header>
   <main>
@@ -108,13 +115,13 @@
             </a>
           </li>
           <li class="breadcrumbs__item arrow">
-            <a href="#">Каталог</a>
+            <a class="breadcrumbs__link" href="#">Каталог</a>
           </li>
           <li class="breadcrumbs__item arrow">
-            <a href="#">Инструмент</a>
+            <a class="breadcrumbs__link" href="#">Инструмент</a>
           </li>
           <li class="breadcrumbs__item arrow">
-            <a href="#">Перфораторы</a>
+            <a class="breadcrumbs__link" href="#">Перфораторы</a>
           </li>
         </ul>
         <h2 class="catalog__title">Перфораторы</h2>
@@ -123,23 +130,12 @@
             <h3 class="form__title">Фильтр:</h3>
             <fieldset class="form__block">
               <legend class="form__legend">Цена:</legend>
-              <div class="form__range-filter">
-                <div class="form__range-controls">
-                  <div class="form__scale">
-                    <div class="form__bar"></div>
-                  </div>
-                  <button type="button" class="form__toggle form__toggle-min"></button>
-                  <button type="button" class="form__toggle form__toggle-max"></button>
-                </div>
-                <div class="form__price-controls">
-                  <label class="form__min-price">
-                    <input type="number" name="min-price" value="0">
-                  </label>
-                  <p> &ndash; </p>
-                  <label class="form__max-price">
-                    <input type="number" name="max-price" value="30000">
-                  </label>
-                </div>
+              <div class="form__range-price">
+                <div id="slider-snap"></div>
+              </div>
+              <div class="form__price-controls">
+                <span class="form__min-price" id="slider-snap-value-lower"></span>
+                <span class="form__max-price" id="slider-snap-value-upper"></span>
               </div>
             </fieldset>
             <div class="line"></div>
@@ -476,7 +472,8 @@
         </div>
       </div>
     </div>
-  <script src="js/basket.min.js"></script>
+  <script src="js/basket.js"></script>
+  <script src="./js/nouislider.js"></script>
 </body>
 
 </html>

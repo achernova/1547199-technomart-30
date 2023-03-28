@@ -15,7 +15,7 @@
   position: relative;
 }
 
-.breadcrumbs a {
+.breadcrumbs__link {
   list-style: none;
   color: var(--basic-black);
   padding-right: 40px;

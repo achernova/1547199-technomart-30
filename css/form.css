@@ -43,6 +43,13 @@
   margin-top: 24px;
 }
 
+.form__range-price {
+  margin-top: 24px;
+  background-color: var(--special-light);
+  padding: 20px 20px;
+  margin-bottom: 9px;
+}
+
 .form__range-controls {
   background-color: var(--special-light);
   height: 41px;
@@ -50,7 +57,6 @@
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-  position: relative;
 }
 
 .form__range-controls .form__scale {
@@ -85,35 +91,22 @@
   outline: none;
 }
 
-.form__price-controls input {
-  width: 60px;
-  padding: 10px;
-  margin-left: 10px;
-  text-align: center;
-  border: none;
-  border-radius: 5px;
-  background: var(--special-light);
-}
-
 .form__price-controls {
-  font-size: 17px;
-  line-height: 18px;
   display: flex;
   justify-content: space-between;
   align-self: center;
   box-sizing: border-box;
-  height: 38px;
   margin-bottom: 42px;
 }
 
 
-.form__min-price input,
-.form__max-price input {
-  width: 95px;
-  margin-left: 0;
-  padding-right: 0;
-  padding-left: 0;
+.form__min-price,
+.form__max-price {
+  padding: 20px 20px;
   text-align: center;
+  font-size: 17px;
+  line-height: 18px;
+  background: var(--special-light);
 }
 
 .form__price-controls p {
