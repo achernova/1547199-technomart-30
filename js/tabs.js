@@ -1,8 +1,6 @@
 const tabList = document.querySelectorAll('[data-element="service"]');
 const subscriptionList = document.querySelectorAll('[data-element="service-item"]');
 
-console.log(tabList);
-
 const getTabs = () => {
   for (let i = 0; i < tabList.length; i++) {
     tabList[i].addEventListener('click', function (evt) {

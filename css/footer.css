@@ -29,12 +29,18 @@
 .footer__logo {
   background-color: var(--basic-red);
   box-shadow: 0 5px 0 0 var(--red-buttona);
-  width: 220px;
-  height: 68px;
   padding: 20px 42px 20px 42px;
   box-sizing: border-box;
   margin-bottom: 22px;
+  transition: 0.5s ease-in-out;
+}
 
+.footer__logo:active {
+  background-color: var(--red-buttona);
+}
+
+.footer__logo:hover {
+  opacity: 0.8;
 }
 
 .footer__adress p {

@@ -31,8 +31,8 @@
               <input id="search" type="text" placeholder="Поиск:" class="header__input-search">
               <button type="submit" class="header__search-button" aria-label="Поиск"></button>
             </form>
-            <a href="#" class="header__bookmark">Закладки: 0</a>
-            <a href="#" class="header__basket">Корзина: 0</a>
+            <a href="#" class="header__link header__link--bookmark">Закладки: 0</a>
+            <a href="#" class="header__link header__link--basket">Корзина: 0</a>
             <button type="button" class="header__button">Оформить заказ</button>
           </div>
         </div>
@@ -57,7 +57,7 @@
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">Компания</a>
-            </li class="navigation__item">
+            </li>
             <li class="navigation__item">
               <a class="navigation__link" href="catalog.html">Каталог</a>
             </li>
@@ -157,6 +157,7 @@
     </section>
 
     <section class="goods">
+      <h2 class="visually-hidden">Товары</h2>
       <div class="container">
         <ul class="goods__list">
           <li class="goods__item">
@@ -237,6 +238,7 @@
     </section>
 
     <section class="manufactures">
+      <h2 class="visually-hidden">производители</h2>
       <div class="container">
         <ul class="manufactures__list">
           <li class="manufactures__item">
@@ -343,54 +345,49 @@
             <button class="contacts__map">
               <img src="img/map.jpg" width="300" height="158" alt="Карта">
             </button>
-            <button type="button" class="contacts__btn">Заблудились? Напишите нам!</button>
+            <button type="button" class="contacts__btn" data-element="form">Заблудились? Напишите нам!</button>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="modal modal-window">
-      <h2 class="visually-hidden">Окно обратной связи</h2>
-      <form action="https://echo.htmlacademy.ru/" method="post" class="modal-write-us">
-        <div class="modal-filter">
-          <div class="modal-name">
-            <label for="name">Ваше имя:</label>
-            <input type="text" name="writeus" id="name" placeholder="Имя Фамилия">
+    <div class="modal-overlay">
+      <div class="modal modal-window" data-element="modal-window">
+        <h2 class="visually-hidden">Окно обратной связи</h2>
+        <form action="https://echo.htmlacademy.ru/" method="post" class="modal-window__form modal-write-us">
+          <div class="modal-window__wrapper">
+            <div class="modal-window__block">
+              <label for="name">Ваше имя:</label>
+              <input type="text" name="writeus" id="name" placeholder="Имя Фамилия">
+            </div>
+            <div class="modal-window__block">
+              <label for="mail">Ваш e-mail:</label>
+              <input type="email" name="mail" id="mail" placeholder="email@example.com">
+            </div>
+            <div class="modal-window__block modal-window__block--text">
+              <label for="letter-field">Текст письма:</label>
+              <textarea name="letter" id="letter-field" rows="10" class="placeholder">В свободной форме</textarea>
+            </div>
           </div>
-          <div class="modal-email">
-            <label for="mail">Ваш e-mail:</label>
-            <input type="email" name="mail" id="mail" placeholder="email@example.com">
+          <div class="modal-window__footer">
+            <button type="submit" class="modal-window__btn">Отправить</button>
           </div>
-          <div class="modal-textarea">
-            <label for="letter-field">Текст письма:</label>
-            <textarea name="letter" id="letter-field" rows="10" class="placeholder">В свободной форме</textarea>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="button-send">Отправить</button>
-        </div>
-      </form>
-      <button type="button" class="modal-close" aria-label="Закрыть"></button>
-    </section>
+        </form>
+        <button type="button" class="modal-window__btn-close" data-element="close-window" aria-label="Закрыть"></button>
+      </div>
+    </div>
 
-    <section class="modal modal-map">
+
+
+    <div class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
         width="943" height="449" allowfullscreen
         title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
       <button type="button" class="modal-map__close-map" aria-label="Закрыть"></button>
-    </section>
+    </div>
 
-    <section class="modal modal-basket">
-      <h2 class="visually-hidden">Корзина</h2>
-      <p>Товар добавлен в корзину!</p>
-      <div>
-        <a href="#" class="a-buy">Оформить заказ</a>
-        <a href="catalog.html" class="next-buy">Продолжить покупки</a>
-      </div>
-      <button type="button" class="modal-close-basket" aria-label="Закрыть"></button>
-    </section>
   </main>
 
   <footer class="footer">
@@ -491,7 +488,7 @@
 
   <!-- <script src="js/form.js"></script> -->
   <script src="js/map.js"></script>
-  <script src="js/basket.js"></script>
+  <script src="js/form.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/tabs.js"></script>
 
