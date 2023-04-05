@@ -64,3 +64,9 @@
 .manufactures__item:active {
   opacity: 0.5;
 }
+
+@media (max-width: 1024px)  {
+  .manufactures__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

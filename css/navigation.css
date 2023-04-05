@@ -25,3 +25,22 @@
   color: var(--basic-white);
   opacity: 0.5;
 }
+
+@media (max-width: 1024px) {
+  .navigation__list {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .navigation__item {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation__link {
+    padding: 10px 29px;
+    width: 100%;
+    text-align: start;
+  }
+}

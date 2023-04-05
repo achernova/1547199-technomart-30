@@ -184,3 +184,9 @@ del {
 .goods__btn-bookmarks {
   border-radius: 3%;
 }
+
+@media (max-width: 1024px)  {
+  .goods__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

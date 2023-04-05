@@ -7,7 +7,6 @@
   grid-template-rows: auto auto auto;
   margin-bottom: 65px;
   gap: 20px;
-  max-width: 940px;
   margin: 0 auto;
 }
 
@@ -236,7 +235,7 @@
   background-image: url(../img/new.png);
   background-repeat: no-repeat;
   background-position: 0 0;
-  left: 230px;
+  right: 0;
   top: 1px;
 }
 
@@ -286,4 +285,24 @@
   background-position: 0 0;
   left: 191px;
   top: 32px;
+}
+
+
+@media (max-width: 1024px) {
+  .promo__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .promo__slider {
+    grid-column: 1/3;
+    grid-row: unset;
+    margin: 0 auto;
+  }
+
+  .promo__container {
+    grid-row: unset;
+    grid-column: unset;
+    width: 100%;
+  }
+
 }

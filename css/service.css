@@ -187,3 +187,9 @@ h3 {
   background-color: var(--basic-white);
   color: var(--deeply-grey);
 }
+
+@media (max-width: 1024px) {
+  .service__item::after {
+    display: none;
+  }
+}
