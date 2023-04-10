@@ -27,7 +27,6 @@
   text-transform: uppercase;
   text-align: center;
   background-color: var(--basic-red);
-  max-width: 192px;
   padding: 11px 24px 9px 24px;
 }
 

@@ -27,15 +27,14 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 220px;
-  height: 318px;
+  max-width: 220px;
   padding-bottom: 21px;
 }
 
 .goods__block {
   margin: auto;
   position: relative;
-  width: 184px;
+  width: 100%;
 }
 
 
@@ -105,7 +104,7 @@ del {
   display: flex;
   flex-direction: column;
   align-items: center;
-  left: 15%;
+  left: 20%;
   top: -40px;
 }
 
@@ -185,8 +184,18 @@ del {
   border-radius: 3%;
 }
 
-@media (max-width: 1024px)  {
+@media (max-width: 1023px)  {
   .goods__list {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .goods__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .goods__item {
+    max-width: 100%;
   }
 }

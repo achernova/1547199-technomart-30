@@ -15,6 +15,7 @@ const getTabs = () => {
       }
       document.getElementById(tabId).classList.add('is-open');
       evt.target.classList.add('is-active');
+      evt.target.classList.add('is-disabled');
     }, {passive: true});
 
     tabList[i].addEventListener('focus', function (evt) {

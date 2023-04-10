@@ -65,8 +65,22 @@
   opacity: 0.5;
 }
 
-@media (max-width: 1024px)  {
+@media (max-width: 1023px)  {
   .manufactures__list {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .manufactures__item {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .manufactures__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .manufactures__item {
+    width: 100%;
   }
 }

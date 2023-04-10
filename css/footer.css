@@ -4,8 +4,8 @@
 }
 
 .footer__wrapper {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   margin: auto;
 }
 
@@ -60,8 +60,6 @@
 
 
 .footer__navigation {
-  /*display: grid;
-  grid-template-rows: 1fr 1fr;*/
   margin: 0;
   padding: 0;
   margin-top: 37px;
@@ -80,21 +78,20 @@
 
 .footer__item {
   margin-right: 58px;
-
 }
 
 .footer__item:last-child {
   margin: 0;
 }
 
-.footer__item a {
+.footer__link {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-background);
   margin: auto;
 }
 
-.footer__list--yellow a {
+.footer__list--yellow .footer__link {
   color: var(--special-yellowfooter);
 }
 
@@ -110,6 +107,7 @@
 
 .feedback {
   background-color: var(--deep-grey);
+  padding: 0 40px;
 }
 
 .feedback__container {
@@ -127,16 +125,16 @@
   padding-top: 20px;
 }
 
-.container-mail a {
+.feedback__link {
   color: var(--special-yellowfooter);
 }
 
-.container-mail a:hover {
+.feedback__link:hover {
   color: var(--special-yellowfooter);
   text-decoration: underline;
 }
 
-.container-mail a:active {
+.feedback__link:active {
   color: var(--basic-red);
 }
 
@@ -148,7 +146,6 @@
   margin-right: 100px;
   padding: 0;
   list-style: none;
-  width: 140px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -176,3 +173,62 @@
   margin-left: 15px;
   gap: 50px;
 }
+
+
+@media (max-width: 1023px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0 40px;
+  }
+
+  .footer__list {
+    padding: 0;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 990px) {
+  .feedback__block {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .feedback__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feedback__container p {
+    margin-bottom: 20px;
+  }
+
+  .feedback__list {
+    margin: 0 0 30px 0;
+  }
+
+  .feedback__block {
+    margin: 0;
+  }
+}
+
+@media (max-width: 769px) {
+  .footer__navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__list {
+    flex-direction: column;
+  }
+
+  .footer__adress {
+    width: 100%;
+  }
+}
+

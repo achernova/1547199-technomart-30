@@ -44,3 +44,9 @@
     text-align: start;
   }
 }
+
+@media (max-width: 769px) {
+  .navigation__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
