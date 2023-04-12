@@ -84,13 +84,6 @@
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-white);
-  background-color: var(--basic-white);
-  /*background-image: url("../img/bg.jpg");*/
-  background-position: top center;
-  background-repeat: no-repeat;
-  display: grid;
-  grid-template-rows: min-content 1fr 1fr 1fr 1fr 1fr min-content;
-  align-content: start;
   height: 100%;
 }
 
@@ -117,6 +110,12 @@ a {
   .container {
     max-width: 940px;
     padding: 0 40px;
+  }
+}
+
+@media (max-width: 769px) {
+  .container {
+    padding: 0 20px;
   }
 }
 

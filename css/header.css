@@ -476,4 +476,11 @@
   .header__registration {
     width: 100%;
   }
+
+  .header__logo-main {
+    padding: 12px 20px 0 20px;
+  }
+  .header__logo-main svg {
+    width: 50px;
+  }
 }

@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.heading h2 {
+.heading__title {
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -37,4 +37,21 @@
 
 .heading__btn:active {
   background-color: var(--red-buttona);
+}
+
+@media (max-width: 769px) {
+  .heading__wrapper {
+    padding: 10px 20px;
+  }
+
+ .heading__title {
+  font-size: 15px;
+  line-height: 15px;
+  margin-right: 10px;
+ }
+
+ .heading__btn {
+  padding: 10px 10px;
+  font-size: 10px;
+ }
 }

@@ -243,3 +243,7 @@
   border: 1px solid var(--basic-red);
   outline: none;
 }
+
+@media (min-width: 1024px) {
+  
+}

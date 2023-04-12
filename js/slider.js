@@ -4,7 +4,7 @@ const prevToggle = document.querySelector('[data-element="prev"]');
 const nextToggle = document.querySelector('[data-element="next"]');
 
 const getCarousel = () => {
-  let widthMobile = 500;
+  let widthMobile = 300;
   let width = 620;
   let position = 0;
   let countItems = Object.keys(carouseItem).length;
@@ -38,19 +38,6 @@ const getCarousel = () => {
       });
     }
   };
-
-
-  nextToggle.addEventListener('click', function () {
-    position -= width;
-    position = Math.max(position, -width * (countItems - 1));
-    carouselList.style.marginLeft = position + 'px';
-  });
-
-  prevToggle.addEventListener('click', function () {
-    position += width;
-    position = Math.min(position, 0);
-    carouselList.style.marginLeft = position + 'px';
-  });
 
   breakpoint.addListener(breakpointChecker);
   breakpointChecker();

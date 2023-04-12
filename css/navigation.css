@@ -48,5 +48,11 @@
 @media (max-width: 769px) {
   .navigation__list {
     grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+  }
+
+  .navigation__link {
+    padding: 5px 10px;
+    font-size: 15px;
   }
 }

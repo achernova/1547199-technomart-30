@@ -84,3 +84,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 769px) {
+  .manufactures__item img {
+    width: 100px;
+  }
+}
