@@ -116,6 +116,10 @@
   background-position: 0 0;
 }
 
+.promo__btn-slide {
+  transition: 0.5s ease-in-out;
+}
+
 .promo__btn {
   font-size: 14px;
   line-height: 18px;
@@ -230,6 +234,10 @@
   top: 1px;
 }
 
+.is-disable {
+  opacity: 0.4;
+}
+
 @media (max-width: 1024px) {
   .promo__wrapper {
     grid-template-columns: 1fr 1fr;
@@ -246,9 +254,7 @@
     grid-column: unset;
     width: 100%;
   }
-
 }
-
 
 @media (max-width: 769px) {
   .promo__slider {
@@ -330,5 +336,19 @@
 
   .promo__link {
     font-size: 10px;
+  }
+}
+
+
+@media(max-width: 540px) {
+  .promo__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media(min-width: 1024px) {
+  .promo__btn-slide:hover {
+    opacity: 0.5;
   }
 }

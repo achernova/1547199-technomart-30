@@ -143,7 +143,8 @@ a {
   box-shadow: 10px 10px 10px 10px var(--shadow);
 }
 
-.modal-overlay {
+.modal-overlay,
+.modal-overlay-map {
   position: fixed;
   top: 0;
   right: 0;
@@ -353,7 +354,7 @@ a {
 .modal-map::before {
   content: "";
   position: absolute;
-  width: 943px;
+  width: 100%;
   height: 7px;
   background-color: var(--basic-red);
   top: -1px;
@@ -399,6 +400,22 @@ a {
 .modal-map__close-map:active::before,
 .modal-map__close-map:active::after {
   background-color: var(--red-buttona);
+}
+
+@media (max-width: 1023px) {
+  .modal-map {
+    width: 700px;
+  }
+
+  .modal-map iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 769px) {
+  .modal-map {
+    width: 300px;
+  }
 }
 
 /*modal basket*/

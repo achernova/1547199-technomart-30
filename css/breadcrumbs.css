@@ -10,9 +10,12 @@
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  margin: 0;
-  grid-column: 1/-1;
+  margin: 0 0 20px 0;
   position: relative;
+}
+
+.breadcrumbs__item {
+  margin-left: 50px;
 }
 
 .breadcrumbs__link {
@@ -35,4 +38,21 @@
   background-position: 0 0;
   left: -22px;
   top: 1px;
+}
+
+@media (max-width: 769px) {
+  .breadcrumbs {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .arrow::before {
+    left: -10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .breadcrumbs__link:hover {
+    opacity: 0.6;
+  }
 }

@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HTML Academy: Техномарт</title>
   <link rel="icon" href="img/favicon.ico">
   <link rel="icon" href="img/favicon.ico" type="image/svg+xml">
@@ -136,8 +137,8 @@
               </div>
             </div>
             <div class="slider-buttons">
-              <button type="button" class="promo__btn-left" aria-label="Налево" data-element="prev"></button>
-              <button type="button" class="promo__btn-right" aria-label="Направо" data-element="next"></button>
+              <button type="button" class="promo__btn-slide promo__btn-left is-disable" aria-label="Налево" data-element="prev"></button>
+              <button type="button" class="promo__btn-slide promo__btn-right" aria-label="Направо" data-element="next"></button>
             </div>
           </div>
 
@@ -403,7 +404,7 @@
           <div class="contacts__content">
             <h2 class="contacts__title">Контакты</h2>
             <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-            <button class="contacts__map">
+            <button class="contacts__map" data-element="map">
               <img src="img/map.jpg" width="300" height="158" alt="Карта">
             </button>
             <button type="button" class="contacts__btn" data-element="form">Заблудились? Напишите нам!</button>
@@ -439,14 +440,15 @@
     </div>
 
 
-
-    <div class="modal modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-        width="943" height="449" allowfullscreen
-        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-      <button type="button" class="modal-map__close-map" aria-label="Закрыть"></button>
+    <div class="modal-overlay-map">
+      <div class="modal modal-map" data-element="modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+          width="943" height="449" allowfullscreen
+          title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+        <button type="button" class="modal-window__btn-close" data-element="close-window-map" aria-label="Закрыть"></button>
+      </div>
     </div>
 
   </main>

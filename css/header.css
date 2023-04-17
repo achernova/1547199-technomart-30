@@ -87,7 +87,7 @@
   outline: none;
 }
 
-.header__input-search::-webkit-input-placeholder {
+.header__search input::-webkit-input-placeholder {
   color: var(--basic-white);
 }
 
@@ -99,8 +99,7 @@
   height: 42px;
   color: var(--basic-white);
   background-color: var(--deep-grey);
-  padding: 0;
-  padding-left: 42px;
+  padding: 0 0 0 42px;
   position: relative;
 }
 
@@ -371,17 +370,6 @@
   position: relative;
 }
 
-.header__login-dot {
-  width: 6px;
-  height: 6px;
-  background-color: var(--deeply-grey);
-  border-radius: 50%;
-  position: absolute;
-  padding: 0;
-  top: 14px;
-  left: 88px;
-}
-
 .header__login-link {
   font-size: 16px;
   line-height: 18px;
@@ -403,7 +391,7 @@
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .header__registration {
     display: flex;
     flex-direction: column;
@@ -482,5 +470,29 @@
   }
   .header__logo-main svg {
     width: 50px;
+  }
+
+  .header__search input {
+    padding-left: 5px;
+    max-width: 100px;
+  }
+
+  .header__search-button::after {
+    display: none;
+  }
+
+  .header__wrapper {
+    padding: 0 20px;
+  }
+
+  .header__username {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .header__login {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
   }
 }
