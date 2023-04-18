@@ -2,26 +2,30 @@
   background-color: var(--basic-background);
 }
 
-.description__wrapper{
+.description__wrapper {
   padding: 64px 0 68px 0;
 }
 
 .description__title {
   font-size: 30px;
   line-height: 30px;
-  text-transform: uppercase;
-  color: var(--basic-black);
+
   margin: 0 0 25px 0;
+
+  text-transform: uppercase;
+
+  color: var(--basic-black);
 }
 
 p {
   font-family: PT Sans, 'Arial', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
+  font-weight: normal;
   line-height: 24px;
-  text-align: left;
-  color: var(--basic-black);
-  margin: 0;
-}
 
+  margin: 0;
+
+  text-align: left;
+
+  color: var(--basic-black);
+}

@@ -1,15 +1,25 @@
 .catalog__title {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 29px 0 29px;
+
+  background-color: var(--grey-catalog);
+}
+
+.catalog__title-h2 {
   font-size: 30px;
   line-height: 30px;
+
+  margin: 0;
+
   text-transform: uppercase;
-  background-color: var(--grey-catalog);
+
   color: var(--basic-grey);
-  margin: 0 0 20px 0;
-  padding: 29px 729px 29px 29px;
 }
 
 .catalog__body {
   display: grid;
+
   grid-template-columns: min-content 1fr;
   gap: 21px;
 }
@@ -18,5 +28,16 @@
   .catalog__body {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 769px) {
+  .catalog__title {
+    padding: 15px 0 15px 15px;
+  }
+
+  .catalog__title-h2 {
+    font-size: 15px;
+    line-height: 15px;
   }
 }

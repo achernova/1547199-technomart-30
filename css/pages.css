@@ -1,19 +1,20 @@
 .pages {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 0;
-  margin-top: 48px;
-  margin-bottom: 60px;
+  justify-content: flex-start;
+
+  margin: 48px 0 60px 0;
 }
 
 .pages__list {
-  list-style: none;
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
+  justify-content: flex-start;
+
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .pages__item {
@@ -23,40 +24,43 @@
 
 .pages__link {
   font-family: PT Sans, 'Arial', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
+  font-weight: normal;
   line-height: 18px;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-  border: 1px solid var(--border-grey);
-  border-radius: 2px;
+
+  display: block;
+
   width: 38px;
   height: 38px;
-  border-radius: 2px;
   padding: 10px 0 10px 0;
-  display: block;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--basic-black);
+  border: 1px solid var(--border-grey);
+  border-radius: 2px;
+  background-color: var(--basic-white);
 }
 
 .pages__next {
   font-family: PT Sans, 'Arial', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
+  font-weight: normal;
   line-height: 18px;
+
+  margin-left: 0;
+  padding: 10px 15px 10px 15px;
+
+  cursor: pointer;
+  text-align: center;
   text-transform: uppercase;
+
   color: var(--basic-black);
-  background-color: var(--basic-white);
   border: 1px solid var(--border-grey);
   border-radius: 2px;
-  text-align: center;
-  padding: 10px 15px 10px 15px;
-  margin: auto;
-  margin-left: 0;
   outline: none;
-  cursor: pointer;
+  background-color: var(--basic-white);
 }
 
 .pages__link:hover,
@@ -71,12 +75,13 @@
 
 
 .pages__link:focus {
-  background-color: var(--basic-red);
   color: var(--basic-white);
+  background-color: var(--basic-red);
 }
 
 .is-disabled {
   cursor: default;
-  background-color: var(--basic-red);
+
   color: var(--basic-white);
+  background-color: var(--basic-red);
 }

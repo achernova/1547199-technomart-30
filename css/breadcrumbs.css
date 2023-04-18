@@ -1,6 +1,5 @@
 .breadcrumbs {
   font-family: PT Sans, 'Arial', sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
@@ -48,6 +47,10 @@
 
   .arrow::before {
     left: -10px;
+  }
+
+  .breadcrumbs__item {
+    margin-left: 0;
   }
 }
 

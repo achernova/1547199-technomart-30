@@ -1,66 +1,72 @@
 .sort {
-  background-color: var(--special-light);
-  width: 100%;
-  margin: auto;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin-bottom: 28px;
-  padding: 10px 17px 10px 19px;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto 28px ;
+  padding: 10px 17px 10px 19px;
+
+  background-color: var(--special-light);
 }
 
 .sort__list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .sort__filter {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .sort__title {
-  margin: 0;
   font-family: PT Sans, 'Arial', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
+  font-weight: normal;
   line-height: 18px;
+
+  margin: 0;
+
   text-transform: uppercase;
+
   color: var(--basic-black);
 }
 
 .sort__label {
   font-family: PT Sans, 'Arial', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
+  font-weight: normal;
   line-height: 18px;
-  text-transform: uppercase;
-  color: var(--opacity-black);
+
+  margin-left: 65px;
+
   text-decoration: underline;
+  text-transform: uppercase;
+
+  color: var(--opacity-black);
+
   text-decoration-color: var(--basic-red);
   text-decoration-style: dotted;
-  margin-left: 65px;
 }
 
 .sort__radio {
   position: absolute;
 
+  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
-
-  clip: rect(0 0 0 0);
 }
 
 .sort__radio:checked + label {
   text-decoration: none;
+
   color: var(--basic-red);
 }
 
@@ -69,20 +75,24 @@
 }
 
 .sort__button {
-  border: none;
-  outline: none;
   cursor: pointer;
   user-select: none;
+
+  border: none;
+  outline: none;
   background-color: transparent;
 }
 
 .sort__link:hover {
-  color: var(--basic-black);
   text-decoration: underline;
+
+  color: var(--basic-black);
+
   text-decoration-color: var(--basic-red);
 }
 
 .sort__link:focus {
-  color: var(--basic-red);
   text-decoration: none;
+
+  color: var(--basic-red);
 }
