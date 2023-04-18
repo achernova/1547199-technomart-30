@@ -90,7 +90,7 @@
 
 .service__list {
   box-sizing: border-box;
-  margin: 0 0 100px 0;
+  margin: 0 0 100px 80px;
   padding: 0;
 
   list-style: none;
